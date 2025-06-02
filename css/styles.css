@@ -9,6 +9,7 @@ body {
     height: 100%;
     font-family: Arial, sans-serif;
     background-color: rgb(215, 206, 223);
+    
 }
 
 #name {
@@ -40,6 +41,7 @@ body {
     overflow-y: auto;
     box-sizing: border-box;
     background-color: #d7cedf;
+    scroll-behavior: smooth;
 }
 
 .navbar {
