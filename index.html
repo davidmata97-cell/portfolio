@@ -7,6 +7,7 @@
     <title>Porfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/a4a3ff8d11.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/astro.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -29,100 +30,112 @@
                         <a class="btn-glass" href="#curriculum">Curriculum</a>
                     </li>
                     <li>
-                        <a class="btn-glass" href="">Inglés</a>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="toggle" value="es" value="en" />
+                            <label for="toggle"></label>
+                        </div>
+
                     </li>
                 </ul>
             </nav>
             <section id="redes">
-                
-                    <a target="_blank" href="https://github.com/davidmata97-cell"><i class="fa-brands fa-github fa-xl" style="color: #5729e0"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/david-de-mata-de-la-puente-511185263/"><i class="fa-brands fa-linkedin fa-xl" style="color: #5729e0"></i></a>
 
-            </section> 
+                <a target="_blank" href="https://github.com/davidmata97-cell"><i class="fa-brands fa-github fa-xl"
+                        style="color: #5729e0"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/david-de-mata-de-la-puente-511185263/"><i
+                        class="fa-brands fa-linkedin fa-xl" style="color: #5729e0"></i></a>
+
+            </section>
         </header>
-
-
-
 
         <main class="main">
             <p>
-                <section id="personal">proyectos y todo lo demás. "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                laborum."
+            <main class="main">
+                <section id="personal">
+                    <h2>Sobre Mí</h2>
+                    <div class="cuadro">
+                        <h3>¡Hola! Soy David</h3>
+                        <p>A higher technitian of software develop with experience in internship.
+                            I have knowledge on HTML, CSS, JS, Java and MySQL</p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Habilidades</h3>
+                        <ul>
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>Frameworks (Ej: React, Angular, Vue)</li>
+                            <li>Control de Versiones (Git)</li>
+                            <li>Diseño Responsive</li>
+                        </ul>
+                    </div>
+                </section>
 
-            Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                sunt explicabo.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos qui</section>
-            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipis
-            ci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-            voluptatem. Ut en
-            im ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-            ea commodi con
-            sequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel
-            illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                <section id="proyectos">
+                    <h2>Mis Proyectos</h2>
+                    <br>
+                    <br>
+                    <div class="cuadro-proyecto">
+                        <h3>Memorion</h3>
+                        <p>Aplicación web, con estructura HTML 5 y JS en la que se pueda jugar al famoso juego del
+                            Memorión.</p>
+                        <a href="https://davidmata97-cell.github.io/Memorion/" target="_blank" class="btn-proyecto">Ver
+                            Demo</a>
 
-            1914 translation by H. Rackham
-            "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
-            and
-            I will give you a complete account of the system, and expound the actual teachings of the great explorer
-            of the truth,
-            the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it
-            is pleasure, bu
-            t because those who do not know how to pursue pleasure rationally encounter consequences that are
-            extremely painful. No
-            <section id="proyectos">r again is there anyone who loves or pursues or desires to obtain pain of itself,
-                because it is pain,
-                but because occas
-                ionally circumstances occur in which toil and pain can procure him some great pleasure. To take a
-                trivial example, whi
-                ch of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who
-                has any right
-                to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who
-                avoids a pain
-                that produces no resultant pleasure?"</section>
+                    </div>
 
-            <section id="curriculum">Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 B
-            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium volupta
-            tum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-            provident,
-            similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum
-            quidem
-            rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque
-            nihil
-            impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-            repellendus.
-            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
-            voluptates repudiandae
-            sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-            voluptatibus
-            maiores alias consequatur aut perferendis doloribus asperiores repellat."
+                    <div class="cuadro-proyecto">
+                        <h3>Maps-Api</h3>
+                        <p>Aplicación web que permite mostrar información de geolocalización con ayuda de las APIs de
+                            Nominatim y Open Street Maps.</p>
+                        <img src="img/maps1.png" alt="maps1">
+                        <img src="img/maps2.png" alt="maps2">
+                        <img src="img/maps3.png" alt="maps3">
+                        <a href="https://davidmata97-cell.github.io/Maps-Api/" target="_blank" class="btn-proyecto">Ver
+                            Demo</a>
+                    </div>
+                    <div class="cuadro-proyecto">
+                        <h3>Calcu_Red</h3>
+                        <p>Calculadora de direcciones IP que permite de forma sencilla identificar tipos de redes,
+                            asignar máscaras de red, calcular número de hosts por subred, direcciones de broadcast.</p>
+                        <img src="img/calcu1.png" alt="calcu1">
+                        <img src="img/calcu2.png" alt="calcu2">
+                        <img src="img/calcu3.png" alt="calcu3">
+                        <a href="https://davidmata97-cell.github.io/Calcu_Redes/" target="_blank"
+                            class="btn-proyecto">Ver Demo</a>
+                    </div>
+                </section>
 
-
-            1914 translation by H. Rackham
-            " On the other hand, we denounce with righteous indignation a
-            leasure of the moment, so blinded by desire, that they cannot foresee th
-            e pain and trouble that are bound to ensue; and equal blame belongs to thos</section>
-            e who fail in their duty through weakness of will, which is the same as saying through s
-            hrinking from toil and pain. These cases are perfectly simple and easy to distinguish. I
-            n a free hour, when our power of choice is untrammelled and when nothing prevents our being
-            able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in
-            certain circumstances and owing to the claims of duty or the obligations of business it will fr
-            equently occur that pleasures have to be repudiated and annoyances accepted. The wise man there
-            fore always holds in these matters to this principle of selection: he rejects pleasures to secur
-            e other greater pleasures, or else he endures pains to avoid worse pains."</p>
-
+                <section id="curriculum">
+                    <a target="_blank" style="text-decoration: none;">
+                        <h2>Currículum</h2>
+                    </a>
+                    <div class="cuadro">
+                        <h3>Experiencia Laboral</h3>
+                        <h4>Prácticas FFEs</h4>
+                        <p><em>Abril 2025 - Junio 2025</em></p>
+                        <ul>
+                            <li>Desarrollo de interfaces de usuario.</li>
+                            <li>Mantenimiento de aplicaciones con APIs</li>
+                            <li>Colaboración en equipo ágil.</li>
+                        </ul>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Educación</h3>
+                        <h4>Grado en Derecho Universidad de León</h4>
+                        <p><em>Septiembre 2015 - Marzo 2020</em></p>
+                    </div>
+                    <div class="cuadro">
+                        <h3>Educación</h3>
+                        <h4>Técnico Superior en Desarrollo de Aplicación Web - I.E.S. San Andrés</h4>
+                        <p><em>Septiembre 2024 - Actualidad</em></p>
+                        <p>Formándome como programador</p>
+                        <a href="https://github.com/davidmata97-cell" target="_blank" class="btn-proyecto">README.md</a>
+                    </div>
+                </section>
+            </main>
+            </p>
         </main>
-
-
     </div>
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>

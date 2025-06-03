@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html,
 body {
     height: 100%;
@@ -11,18 +10,13 @@ body {
     background-color: rgb(215, 206, 223);
     
 }
-
 #name {
     margin-bottom: 10px;
 }
-
 .container {
     display: flex;
     height: 100vh;
-
-
 }
-
 .header {
     width: 25%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -33,7 +27,6 @@ body {
     gap: 30px;
 
 }
-
 .main {
     width: 75%;
     flex: 1;
@@ -43,7 +36,6 @@ body {
     background-color: #d7cedf;
     scroll-behavior: smooth;
 }
-
 .navbar {
     list-style: none;
     text-decoration: none;
@@ -52,7 +44,6 @@ body {
     gap: 30px;
     align-items: stretch;
 }
-
 .btn-glass {
     background: #ffffff33;
     color: #5729e0;
@@ -67,13 +58,149 @@ body {
     box-sizing: border-box;
     font-size: 1rem;
 }
-
 .btn-glass:hover {
     background: #5729e0;
     color: white;
 }
 #redes{
     list-style: none;
- 
+}
+/* === ESTILOS PARA LOS CUADROS DENTRO DE LAS SECCIONES === */
 
+/* Estilo general para los títulos de las secciones */
+.main section h2 {
+    color: #333; /* Un color oscuro para el título */
+    margin-bottom: 25px; /* Espacio debajo del título de sección */
+    padding-bottom: 10px; /* Espacio dentro del borde inferior */
+    border-bottom: 2px solid #5729e0; /* Línea inferior con tu color primario */
+    border-bottom: fixed;
+    font-size: 1.8rem; /* Tamaño del título de sección */
+}
+
+/* Estilo base para todos los cuadros */
+.cuadro,
+.cuadro-proyecto {
+    background-color: #ffffff; /* Fondo blanco para que contraste con el fondo de 'main' */
+    border: 1px solid #e0e0e0; /* Un borde sutil */
+    border-radius: 8px;        /* Esquinas redondeadas para un look más suave */
+    padding: 20px;             /* Espacio interno dentro del cuadro */
+    margin-bottom: 25px;       /* Espacio entre cuadros verticalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Una sombra suave para dar profundidad */
+    transition: box-shadow 0.3s ease; /* Transición suave para el hover (opcional) */
+}
+
+.cuadro:hover,
+.cuadro-proyecto:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al pasar el ratón */
+}
+
+/* Estilos para los títulos dentro de los cuadros (h3, h4) */
+.cuadro h3,
+.cuadro-proyecto h3,
+.cuadro h4,
+.cuadro-proyecto h4 {
+    color: #5729e0; /* Usando tu color primario para los títulos internos */
+    margin-top: 0; /* Quitar margen superior por defecto */
+    margin-bottom: 10px;
+}
+
+.cuadro p,
+.cuadro-proyecto p,
+.cuadro ul,
+.cuadro-proyecto ul {
+    margin-bottom: 10px; /* Espacio al final de párrafos y listas */
+    line-height: 1.6;    /* Mejorar legibilidad del texto */
+}
+
+.cuadro ul,
+.cuadro-proyecto ul {
+    list-style-position: inside; /* Para que los bullets estén dentro del padding */
+    padding-left: 5px; /* Pequeño ajuste si es necesario */
+}
+
+/* Estilos específicos para los cuadros de proyectos, si los necesitas */
+.cuadro-proyecto img {
+    max-width: 100%; /* Asegura que la imagen sea responsive dentro del cuadro */
+    height: auto;
+    border-radius: 4px; /* Esquinas redondeadas para la imagen */
+    margin-bottom: 15px;
+}
+
+/* Estilo para los botones dentro de los proyectos (si quieres algo diferente a .btn-glass) */
+.btn-proyecto {
+    display: inline-block; /* Para que puedan tener padding y margin */
+    background-color: #5729e0; /* Tu color primario */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px; /* Espacio entre botones */
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.btn-proyecto:hover {
+    background-color: #4620b3; /* Un tono más oscuro de tu color primario al pasar el ratón */
+}
+
+/* === FIN DE ESTILOS PARA LOS CUADROS === */
+#proyectos {
+    display: flex;
+    flex-wrap: wrap; /* Para que los proyectos pasen a la siguiente línea si no caben */
+    gap: 20px; /* Espacio entre los cuadros de proyecto */
+}
+
+.cuadro-proyecto {
+    flex: 1 1 300px; /* Permite que crezcan y se encojan, con una base de 300px. Ajusta este valor. */
+    /* Quita el margin-bottom si usas gap, o ajústalo */
+}
+/* Contenedor del toggle */
+.toggle-switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+}
+
+/* Ocultar el checkbox */
+.toggle-switch input {
+  display: none;
+}
+
+/* Estilo del fondo del toggle */
+.toggle-switch label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #4620b3;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo del círculo deslizante */
+.toggle-switch label::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  background-color: rgb(215, 206, 223);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-color: #4620b3;
+}
+
+/* Cambiar el estado cuando está activado */
+.toggle-switch input:checked + label {
+  background-color: #ffffff;
+   border-color: #4620b3;
+}
+
+.toggle-switch input:checked + label::after {
+  transform: translateX(25px);
+  border-color: #4620b3;
 }
