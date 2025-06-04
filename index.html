@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio</title>
+    <title data-translate="pageTitle">Porfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/a4a3ff8d11.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/astro.svg" type="image/x-icon">
@@ -15,120 +15,118 @@
         <header class="header">
             <div class="name">
                 <h1>David de Mata</h1>
-                <h2><i class="fa-solid fa-code" style="color: #5729e0" ;></i>Técnico Superior </h2>
-                <h2> Desarrollo Web<i class="fa-solid fa-code-merge" style="color: #5729e0"></i></h2>
+                <h2><i class="fa-solid fa-code"></i><span data-translate="headerSubtitle1">Técnico Superior</span></h2>
+                <h2><span data-translate="headerSubtitle2">Desarrollo Web</span><i class="fa-solid fa-code-merge"></i>
+                </h2>
             </div>
             <nav class="navbar">
                 <ul class="navbar">
                     <li>
-                        <a class="btn-glass" href="#personal">Personal</a>
+                        <a class="btn-glass" href="#personal" data-translate="navPersonal">Personal</a>
                     </li>
                     <li>
-                        <a class="btn-glass" href="#proyectos">Proyectos</a>
+                        <a class="btn-glass" href="#proyectos" data-translate="navProyectos">Proyectos</a>
                     </li>
                     <li>
-                        <a class="btn-glass" href="#curriculum">Curriculum</a>
+                        <a class="btn-glass" href="#curriculum" data-translate="navCurriculum">Curriculum</a>
                     </li>
                     <li>
                         <div class="toggle-switch">
-                            <input type="checkbox" id="toggle" value="es" value="en" />
+                            <input type="checkbox" id="toggle" />
                             <label for="toggle"></label>
                         </div>
-
                     </li>
                 </ul>
             </nav>
             <section id="redes">
-
-                <a target="_blank" href="https://github.com/davidmata97-cell"><i class="fa-brands fa-github fa-xl"
-                        style="color: #5729e0"></i></a>
+                <a target="_blank" href="https://github.com/davidmata97-cell"><i
+                        class="fa-brands fa-github fa-xl"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/in/david-de-mata-de-la-puente-511185263/"><i
-                        class="fa-brands fa-linkedin fa-xl" style="color: #5729e0"></i></a>
-
+                        class="fa-brands fa-linkedin fa-xl"></i></a>
             </section>
         </header>
 
         <main class="main">
             <p>
             <main class="main">
+
                 <section id="personal">
-                    <h2>Sobre Mí</h2>
+                    <h2 data-translate="personalTitle">Sobre Mí</h2>
                     <div class="cuadro">
-                        <h3>¡Hola! Soy David</h3>
-                        <p>A higher technitian of software develop with experience in internship.
-                            I have knowledge on HTML, CSS, JS, Java and MySQL</p>
+                        <h3 data-translate="personalGreeting">¡Hola! Soy David</h3>
+                        <p data-translate="personalIntro">Un técnico superior en desarrollo de software con experiencia
+                            en prácticas. Tengo conocimientos en HTML, CSS, JS, Java y MySQL.</p>
                     </div>
                     <div class="cuadro">
-                        <h3>Habilidades</h3>
+                        <h3 data-translate="personalSkillsTitle">Habilidades</h3>
                         <ul>
                             <li>HTML5, CSS3, JavaScript</li>
-                            <li>Frameworks (Ej: React, Angular, Vue)</li>
-                            <li>Control de Versiones (Git)</li>
-                            <li>Diseño Responsive</li>
+                            <li data-translate="personalSkillFrameworks">Frameworks (Ej: React, Angular, Vue)</li>
+                            <li data-translate="personalSkillVersionControl">Control de Versiones (Git)</li>
+                            <li data-translate="personalSkillResponsive">Diseño Responsive</li>
                         </ul>
                     </div>
                 </section>
 
                 <section id="proyectos">
-                    <h2>Mis Proyectos</h2>
-                    <br>
-                    <br>
+                    <h2 data-translate="proyectosTitle">Mis Proyectos</h2>
                     <div class="cuadro-proyecto">
-                        <h3>Memorion</h3>
-                        <p>Aplicación web, con estructura HTML 5 y JS en la que se pueda jugar al famoso juego del
-                            Memorión.</p>
-                        <a href="https://davidmata97-cell.github.io/Memorion/" target="_blank" class="btn-proyecto">Ver
-                            Demo</a>
-
+                        <h3 data-translate="proyectoMemorionTitle">Memorion</h3>
+                        <p data-translate="proyectoMemorionDesc">Aplicación web, con estructura HTML 5 y JS en la que se
+                            pueda jugar al famoso juego del Memorión.</p>
+                        <a href="https://davidmata97-cell.github.io/Memorion/" target="_blank" class="btn-proyecto"
+                            data-translate="proyectoBtnDemo">Ver Demo</a>
                     </div>
 
                     <div class="cuadro-proyecto">
-                        <h3>Maps-Api</h3>
-                        <p>Aplicación web que permite mostrar información de geolocalización con ayuda de las APIs de
-                            Nominatim y Open Street Maps.</p>
+                        <h3 data-translate="proyectoMapsApiTitle">Maps-Api</h3>
+                        <p data-translate="proyectoMapsApiDesc">Aplicación web que permite mostrar información de
+                            geolocalización con ayuda de las APIs de Nominatim y Open Street Maps.</p>
                         <img src="img/maps1.png" alt="maps1">
                         <img src="img/maps2.png" alt="maps2">
                         <img src="img/maps3.png" alt="maps3">
-                        <a href="https://davidmata97-cell.github.io/Maps-Api/" target="_blank" class="btn-proyecto">Ver
-                            Demo</a>
+                        <a href="https://davidmata97-cell.github.io/Maps-Api/" target="_blank" class="btn-proyecto"
+                            data-translate="proyectoBtnDemo">Ver Demo</a>
                     </div>
+
                     <div class="cuadro-proyecto">
-                        <h3>Calcu_Red</h3>
-                        <p>Calculadora de direcciones IP que permite de forma sencilla identificar tipos de redes,
-                            asignar máscaras de red, calcular número de hosts por subred, direcciones de broadcast.</p>
+                        <h3 data-translate="proyectoCalcuRedTitle">Calcu_Red</h3>
+                        <p data-translate="proyectoCalcuRedDesc">Calculadora de direcciones IP que permite de forma
+                            sencilla identificar tipos de redes, asignar máscaras de red, calcular número de hosts por
+                            subred, direcciones de broadcast.</p>
                         <img src="img/calcu1.png" alt="calcu1">
                         <img src="img/calcu2.png" alt="calcu2">
                         <img src="img/calcu3.png" alt="calcu3">
-                        <a href="https://davidmata97-cell.github.io/Calcu_Redes/" target="_blank"
-                            class="btn-proyecto">Ver Demo</a>
+                        <a href="https://davidmata97-cell.github.io/Calcu_Redes/" target="_blank" class="btn-proyecto"
+                            data-translate="proyectoBtnDemo">Ver Demo</a>
                     </div>
                 </section>
 
                 <section id="curriculum">
-                    <a target="_blank" style="text-decoration: none;">
-                        <h2>Currículum</h2>
-                    </a>
+                    <h2 data-translate="curriculumTitle">Currículum</h2>
                     <div class="cuadro">
-                        <h3>Experiencia Laboral</h3>
-                        <h4>Prácticas FFEs</h4>
-                        <p><em>Abril 2025 - Junio 2025</em></p>
+                        <h3 data-translate="curriculumExperienceTitle">Experiencia Laboral</h3>
+                        <h4 data-translate="curriculumInternshipTitle">Prácticas FFEs</h4>
+                        <p><em data-translate="curriculumInternshipPeriod">Abril 2025 - Junio 2025</em></p>
                         <ul>
-                            <li>Desarrollo de interfaces de usuario.</li>
-                            <li>Mantenimiento de aplicaciones con APIs</li>
-                            <li>Colaboración en equipo ágil.</li>
+                            <li data-translate="curriculumInternshipDesc1">Desarrollo de interfaces de usuario.</li>
+                            <li data-translate="curriculumInternshipDesc2">Mantenimiento de aplicaciones con APIs</li>
+                            <li data-translate="curriculumInternshipDesc3">Colaboración en equipo ágil.</li>
                         </ul>
                     </div>
                     <div class="cuadro">
-                        <h3>Educación</h3>
-                        <h4>Grado en Derecho Universidad de León</h4>
-                        <p><em>Septiembre 2015 - Marzo 2020</em></p>
+                        <h3 data-translate="curriculumEducationTitle1">Educación</h3>
+                        <h4 data-translate="curriculumDegreeLawTitle">Grado en Derecho Universidad de León</h4>
+                        <p><em data-translate="curriculumDegreeLawPeriod">Septiembre 2015 - Marzo 2020</em></p>
                     </div>
                     <div class="cuadro">
-                        <h3>Educación</h3>
-                        <h4>Técnico Superior en Desarrollo de Aplicación Web - I.E.S. San Andrés</h4>
-                        <p><em>Septiembre 2024 - Actualidad</em></p>
-                        <p>Formándome como programador</p>
-                        <a href="https://github.com/davidmata97-cell" target="_blank" class="btn-proyecto">README.md</a>
+                        <h3 data-translate="curriculumEducationTitle2">Educación</h3>
+                        <h4 data-translate="curriculumDegreeWebTitle">Técnico Superior en Desarrollo de Aplicación Web -
+                            I.E.S. San Andrés</h4>
+                        <p><em data-translate="curriculumDegreeWebPeriod">Septiembre 2024 - Actualidad</em></p>
+                        <p data-translate="curriculumDegreeWebDesc">Formándome como programador</p>
+                        <a href="https://github.com/davidmata97-cell" target="_blank" class="btn-proyecto"
+                            data-translate="curriculumBtnReadme">README.md</a>
                     </div>
                 </section>
             </main>

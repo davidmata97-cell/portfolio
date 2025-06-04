@@ -204,3 +204,18 @@ body {
   transform: translateX(25px);
   border-color: #4620b3;
 }
+.header .name .fa-solid,
+.header .name .fa-solid,
+#redes .fa-brands {
+    color: #5729e0; /* O el color que prefieras */
+}
+.name {
+    margin-bottom: 10px;
+}
+.main section h2 {
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #5729e0; /* O el estilo de borde que desees */
+    font-size: 1.8rem;
+}
