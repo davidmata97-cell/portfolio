@@ -148,7 +148,7 @@ body {
 /* === FIN DE ESTILOS PARA LOS CUADROS === */
 #proyectos {
     display: flex;
-    flex-wrap: wrap; /* Para que los proyectos pasen a la siguiente línea si no caben */
+    flex-direction: column;/* Para que los proyectos pasen a la siguiente línea si no caben */
     gap: 20px; /* Espacio entre los cuadros de proyecto */
 }
 
