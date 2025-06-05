@@ -21,7 +21,7 @@ body {
     width: 25%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #5729e0;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -30,7 +30,7 @@ body {
 .main {
     width: 75%;
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     overflow-y: auto;
     box-sizing: border-box;
     background-color: #d7cedf;
