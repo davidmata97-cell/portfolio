@@ -9,7 +9,8 @@
   "personalGreeting": "¡Hola! Soy David",
   "personalIntro": "Un técnico superior en desarrollo de software con experiencia en prácticas. Tengo conocimientos en HTML, CSS, JS, Java y MySQL.",
   "personalSkillsTitle": "Habilidades",
-  "personalSkillFrameworks": "Frameworks (Ej: React, Angular, Vue)",
+  
+    "_comment":"personalSkillFrameworks Frameworks (Ej: React, Angular, Vue)",
   "personalSkillVersionControl": "Control de Versiones (Git)",
   "personalSkillResponsive": "Diseño Responsive",
   "proyectosTitle": "Mis Proyectos",
@@ -35,5 +36,6 @@
   "curriculumDegreeWebPeriod": "Septiembre 2024 - Actualidad",
   "curriculumDegreeWebDesc": "Formándome como programador",
   "curriculumBtnReadme": "README.md",
-  "proyectoBtnRep": "Repositorio"
+  "proyectoBtnRep": "Repositorio",
+  "_comment": "idioma English"
 }

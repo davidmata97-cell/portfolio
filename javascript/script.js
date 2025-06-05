@@ -13,3 +13,15 @@ document.getElementById("toggle").addEventListener("change", function () {
     loadLanguage(selectedLang);
 });
 
+document.getElementById("toggle").addEventListener("change", function () {
+    const flagIcon = document.querySelector(".flag-icon");
+
+    if (this.checked) {
+        flagIcon.classList.remove("en");
+        flagIcon.classList.add("es"); // Mueve la imagen y cambia la bandera a España
+    } else {
+        flagIcon.classList.remove("es");
+        flagIcon.classList.add("en"); // Vuelve a Inglaterra y se mueve de regreso
+    }
+});
+

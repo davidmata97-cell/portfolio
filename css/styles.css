@@ -7,7 +7,7 @@ html,
 body {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: rgb(215, 206, 223);
+    background-color: #d7cedf;
     
 }
 #name {
@@ -167,13 +167,62 @@ body {
 .toggle-switch input {
   display: none;
 }
+.toggle-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60px; /* Tamaño del toggle */
+    height: 30px;
+    background-color: #ddddddd0;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.toggle-switch input {
+    display: none; /* Ocultar el checkbox */
+}
+
+.toggle-switch label {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.flag-icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out, background-image 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Bandera inicial (UK en la izquierda) */
+.flag-icon.en {
+    background-image: url(../img/trans2.png);
+    left: 2px;
+}
+
+/* Bandera española cuando el toggle está activado */
+.flag-icon.es {
+    background-image: url(../img/trans4.png);
+    transform: translateX(30px); /* Mueve la bandera a la derecha */
+}
+
 
 /* Estilo del fondo del toggle */
 .toggle-switch label {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #4620b3;
+  
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -187,7 +236,7 @@ body {
   left: 2px;
   width: 21px;
   height: 21px;
-  background-color: rgb(215, 206, 223);
+  display: none;
   border-radius: 50%;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -196,7 +245,7 @@ body {
 
 /* Cambiar el estado cuando está activado */
 .toggle-switch input:checked + label {
-  background-color: #ffffff;
+ 
    border-color: #4620b3;
 }
 

@@ -9,7 +9,8 @@
   "personalGreeting": "Hi! I'm David",
   "personalIntro": "A higher technician of software development with internship experience. I have knowledge of HTML, CSS, JS, Java, and MySQL.",
   "personalSkillsTitle": "Skills",
-  "personalSkillFrameworks": "Frameworks (e.g., React, Angular, Vue)",
+  
+    "_comment":"personalSkillFrameworks Frameworks (e.g., React, Angular, Vue)",
   "personalSkillVersionControl": "Version Control (Git)",
   "personalSkillResponsive": "Responsive Design",
   "proyectosTitle": "My Projects",
@@ -35,5 +36,7 @@
   "curriculumDegreeWebPeriod": "September 2024 - Present",
   "curriculumDegreeWebDesc": "Training as a programmer",
   "curriculumBtnReadme": "README.md",
-  "proyectoBtnRep": "Repository"
+  "proyectoBtnRep": "Repository",
+  
+    "_comment":"idioma Español"
 }
