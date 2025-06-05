@@ -18,23 +18,24 @@ body {
     height: 100vh;
 }
 .header {
-    width: 25%;
+    width: 30%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #5729e0;
-    padding: 20px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 
 }
 .main {
-    width: 75%;
+    width: 70%;
     flex: 1;
-    padding: px;
+    padding-left: 20px;
     overflow-y: auto;
     box-sizing: border-box;
     background-color: #d7cedf;
     scroll-behavior: smooth;
+    margin-left: 20px;
 }
 .navbar {
     list-style: none;
@@ -82,7 +83,7 @@ body {
 .cuadro-proyecto {
     background-color: #ffffff; /* Fondo blanco para que contraste con el fondo de 'main' */
     border: 1px solid #e0e0e0; /* Un borde sutil */
-    border-radius: 8px;        /* Esquinas redondeadas para un look más suave */
+    border-radius: 8px;        /* Esquinas redondeadas */
     padding: 20px;             /* Espacio interno dentro del cuadro */
     margin-bottom: 25px;       /* Espacio entre cuadros verticalmente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Una sombra suave para dar profundidad */
