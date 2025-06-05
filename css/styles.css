@@ -30,7 +30,7 @@ body {
 .main {
     width: 75%;
     flex: 1;
-    padding: 20px;
+    padding: px;
     overflow-y: auto;
     box-sizing: border-box;
     background-color: #d7cedf;
